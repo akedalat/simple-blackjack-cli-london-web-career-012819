@@ -30,17 +30,17 @@ def initial_round
   return sum
 end
 
-def hit?(card_total)
+def hit?(kian)
   prompt_user
   answer = get_user_input
   if answer == "s"
-    return card_total
+    return kian
   elsif answer == "h"
-    card_total += deal_card
-    return card_total
+    kian += deal_card
+    return kian
   else
     invalid_command
-    return card_total
+    return kian
     end
 end
 
